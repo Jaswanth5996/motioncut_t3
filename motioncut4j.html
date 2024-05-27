@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f0f0f0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #ff5733;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        /* Main section styles */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        /* Product section styles */
+        .product {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.333% - 2rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-info h1 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #2980b9;
+        }
+
+        .product-info .price {
+            color: #e67e22;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-info .description {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #7f8c8d;
+        }
+
+        .product-info .cta {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product-info .cta:hover {
+            background-color: #d35400;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .product {
+                width: calc(50% - 2rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product">
+            <div class="product-image">
+                <img src="s23.jpeg">
+            </div>
+            <div class="product-info">
+                <h1>Samsung Galaxy S23 Ultra</h1>
+                <p class="price">$1199.99</p>
+                <p class="description">The Samsung Galaxy S23 Ultra offers an amazing camera experience, cutting-edge
+                    performance, and a sleek design.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="product-image">
+                <img src="apple.jpeg">
+            </div>
+            <div class="product-info">
+                <h1>iPhone 14 Pro Max</h1>
+                <p class="price">$1099.99</p>
+                <p class="description">Experience the ultimate performance with the iPhone 14 Pro Max, featuring an
+                    advanced camera system and ProMotion display.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="product-image">
+                <img src="sony.jpeg">
+            </div>
+            <div class="product-info">
+                <h1>Sony Xperia 1 IV</h1>
+                <p class="price">$999.99</p>
+                <p class="description">The Sony Xperia 1 IV delivers professional-grade photography and a stunning 4K
+                    display in a sleek package.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="product-image">
+                <img src="moto.jpeg">
+            </div>
+            <div class="product-info">
+                <h1>Motorola Edge 30 Ultra</h1>
+                <p class="price">$799.99</p>
+                <p class="description">Motorola Edge 30 Ultra features a stunning display, powerful performance, and a
+                    versatile camera system.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="product-image">
+                <img src="google.jpeg">
+            </div>
+            <div class="product-info">
+                <h1>Google Pixel 7</h1>
+                <p class="price">$699.99</p>
+                <p class="description">Google Pixel 7 offers an incredible camera, seamless integration with Google
+                    services, and a beautiful display.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="product-image">
+                <img src="oneplus.jpeg">
+            </div>
+            <div class="product-info">
+                <h1>OnePlus 10 Pro</h1>
+                <p class="price">$899.99</p>
+                <p class="description">The OnePlus 10 Pro features top-tier performance, a fantastic display, and a
+                    long-lasting battery life.</p>
+                <button class="cta">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 ShowKart. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
